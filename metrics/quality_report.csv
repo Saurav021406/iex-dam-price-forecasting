@@ -1,0 +1,11 @@
+,value
+Observations,96480
+Start,2023-01-01 00:00:00
+End,2025-10-01 23:45:00
+Missing timestamps,0
+Duplicate timestamps,0
+Days with exactly 96 blocks,1005 of 1005
+Missing MCP,0
+Missing demand / supply / MCV,0 / 0 / 0
+Negative or zero MCP,0
+MCP min / max,0.05 / 12.00

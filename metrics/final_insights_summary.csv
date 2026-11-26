@@ -1,0 +1,5 @@
+Regime / window,Blocks,Mean actual MCP,MAE XGBoost (tuned),MAE seasonal naive,Gain %
+All test blocks,8928,3.925,0.555,0.772,28.156
+Solar hours (10:00-15:59),2232,1.686,0.396,0.564,29.839
+Evening peak (18:00-22:59),1860,7.685,0.955,1.559,38.737
+Blocks at the price ceiling,1163,10.0,0.725,1.135,36.122

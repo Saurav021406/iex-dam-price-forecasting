@@ -1,0 +1,53 @@
+model,split,level,n,MAE,RMSE,MAPE_%,sMAPE_%,MASE
+XGBoost (default),val,15-min,8736,0.7085,1.1473,31.8343,20.2941,1.0149
+XGBoost (default),val,hourly,2184,0.6865,1.0992,30.7247,19.7941,1.0003
+XGBoost (default),test,15-min,8928,0.5615,0.9305,29.429,18.4786,0.8044
+XGBoost (default),test,hourly,2232,0.5357,0.8646,26.8825,17.8261,0.7806
+Naive (last value),val,15-min,8736,4.4012,5.3365,263.8465,76.9606,6.3051
+Naive (last value),val,hourly,2184,4.3931,5.321,259.7286,76.7419,6.4015
+Naive (last value),test,15-min,8928,3.0818,4.0119,186.0467,63.7837,4.4149
+Naive (last value),test,hourly,2232,3.0695,3.9846,178.2501,63.5509,4.4728
+Seasonal naive (1 day),val,15-min,8736,0.7104,1.3873,25.0517,20.6188,1.0177
+Seasonal naive (1 day),val,hourly,2184,0.7025,1.3277,24.4655,20.3913,1.0237
+Seasonal naive (1 day),test,15-min,8928,0.7723,1.4951,42.4211,25.9331,1.1064
+Seasonal naive (1 day),test,hourly,2232,0.7646,1.424,39.7682,25.6404,1.1141
+Seasonal naive (1 week),val,15-min,8736,1.3487,2.2324,45.4864,34.0339,1.9321
+Seasonal naive (1 week),val,hourly,2184,1.3411,2.1828,44.6159,33.7974,1.9541
+Seasonal naive (1 week),test,15-min,8928,0.9064,1.5952,46.7597,29.403,1.2985
+Seasonal naive (1 week),test,hourly,2232,0.8948,1.5171,43.9204,28.9906,1.3039
+"ARIMA(4,1,2)",val,15-min,8736,2.1021,2.5848,86.637,51.6283,3.0115
+"ARIMA(4,1,2)",val,hourly,2184,2.079,2.5528,85.0789,51.2162,3.0294
+"ARIMA(4,1,2)",test,15-min,8928,2.0875,2.6809,124.4163,55.8768,2.9906
+"ARIMA(4,1,2)",test,hourly,2232,2.0647,2.6399,118.2225,55.4795,3.0085
+"SARIMA(1, 1, 1)(1, 1, 1, 24)",val,15-min,8736,0.8891,1.3775,32.9283,23.3444,1.2737
+"SARIMA(1, 1, 1)(1, 1, 1, 24)",val,hourly,2184,0.8482,1.3164,31.3594,22.4147,1.236
+"SARIMA(1, 1, 1)(1, 1, 1, 24)",test,15-min,8928,1.0072,1.4732,49.61,34.9349,1.4429
+"SARIMA(1, 1, 1)(1, 1, 1, 24)",test,hourly,2232,0.9633,1.3972,45.9971,34.0827,1.4037
+HW add-trend(damped) + mul-season,val,15-min,8736,1.0943,1.64,44.4421,29.3318,1.5677
+HW add-trend(damped) + mul-season,val,hourly,2184,1.0652,1.589,42.9387,28.6916,1.5521
+HW add-trend(damped) + mul-season,test,15-min,8928,1.0891,1.5922,54.0435,34.6271,1.5603
+HW add-trend(damped) + mul-season,test,hourly,2232,1.0525,1.5221,50.4855,33.9621,1.5336
+"Decomposition (multiplicative, 14d window)",val,15-min,8736,0.9566,1.4167,33.961,25.8556,1.3704
+"Decomposition (multiplicative, 14d window)",val,hourly,2184,0.9196,1.3573,32.59,25.0634,1.34
+"Decomposition (multiplicative, 14d window)",test,15-min,8928,0.8699,1.3403,46.3069,25.7674,1.2462
+"Decomposition (multiplicative, 14d window)",test,hourly,2232,0.8197,1.2563,42.4012,24.751,1.1944
+Prophet,val,15-min,8736,1.8521,2.3371,82.7966,44.0227,2.6533
+Prophet,val,hourly,2184,1.8302,2.3015,80.7879,43.6313,2.6668
+Prophet,test,15-min,8928,1.8248,2.2569,114.3332,45.7307,2.6142
+Prophet,test,hourly,2232,1.7814,2.208,106.2131,44.9304,2.5958
+XGBoost (tuned),val,15-min,8736,0.6319,1.1343,32.204,19.1442,0.9053
+XGBoost (tuned),val,hourly,2184,0.6171,1.0809,31.1527,18.751,0.8992
+XGBoost (tuned),test,15-min,8928,0.5182,0.954,30.1108,17.5162,0.7424
+XGBoost (tuned),test,hourly,2232,0.502,0.8774,27.5861,17.0305,0.7315
+LSTM,val,15-min,8736,0.9223,1.3953,46.2112,25.7682,1.3213
+LSTM,val,hourly,2184,0.902,1.3443,44.91,25.3565,1.3143
+LSTM,test,15-min,8928,0.8472,1.3545,45.2034,24.8491,1.2137
+LSTM,test,hourly,2232,0.8229,1.3,41.7657,24.2839,1.199
+GRU,val,15-min,8736,0.8715,1.3374,41.9812,24.2475,1.2486
+GRU,val,hourly,2184,0.847,1.2829,40.6676,23.7348,1.2341
+GRU,test,15-min,8928,0.8579,1.3787,43.7455,25.0439,1.2291
+GRU,test,hourly,2232,0.8301,1.3151,40.4209,24.4023,1.2096
+XGBoost (walk-forward),val,15-min,8736,0.6319,1.1343,32.204,19.1442,0.9053
+XGBoost (walk-forward),val,hourly,2184,0.6171,1.0809,31.1527,18.751,0.8992
+XGBoost (walk-forward),test,15-min,8928,0.5132,0.953,30.0814,17.4056,0.7352
+XGBoost (walk-forward),test,hourly,2232,0.4971,0.8762,27.6009,16.9201,0.7243

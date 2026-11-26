@@ -1,0 +1,6 @@
+series,n,ADF p,KPSS p,verdict
+hourly price (raw),19704,0.0,0.01,mixed (look at plots)
+diff(1),19703,0.0,0.1,stationary
+seasonal diff (24h),19680,0.0,0.1,stationary
+seasonal diff (24h) + diff(1),19679,0.0,0.1,stationary
+weekly seasonal diff (168h),19536,0.0,0.1,stationary

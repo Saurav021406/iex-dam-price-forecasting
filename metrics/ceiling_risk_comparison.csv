@@ -1,0 +1,4 @@
+method,ROC AUC,Avg precision,precision,recall,F1
+Ceiling-risk classifier (XGBoost),0.99,0.941,0.87,0.872,0.871
+XGBoost price forecast >= 8,0.989,0.926,0.881,0.861,0.871
+Yesterday same block at ceiling,0.96,0.71,0.747,0.745,0.746

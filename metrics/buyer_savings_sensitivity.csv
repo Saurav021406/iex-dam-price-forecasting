@@ -1,0 +1,17 @@
+hours shifted,strategy,price paid,saving vs random %,max saving captured %
+3,XGBoost (tuned),1.53,61.01,97.98
+3,GRU,1.569,60.013,96.379
+3,Seasonal naive (1 day),1.547,60.576,97.283
+3,Fixed rule: from 10:00 (no model),1.578,59.788,96.018
+6,XGBoost (tuned),1.644,58.11,99.318
+6,GRU,1.656,57.81,98.805
+6,Seasonal naive (1 day),1.658,57.758,98.715
+6,Fixed rule: from 10:00 (no model),1.686,57.036,97.483
+9,XGBoost (tuned),1.88,52.087,99.799
+9,GRU,1.906,51.444,98.566
+9,Seasonal naive (1 day),1.892,51.779,99.208
+9,Fixed rule: from 10:00 (no model),2.331,40.615,77.818
+12,XGBoost (tuned),2.202,43.9,99.155
+12,GRU,2.236,43.037,97.206
+12,Seasonal naive (1 day),2.224,43.334,97.877
+12,Fixed rule: from 10:00 (no model),3.869,1.415,3.195

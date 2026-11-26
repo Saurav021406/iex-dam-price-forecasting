@@ -1,0 +1,9 @@
+mode,yearly,cps,val_MAE_h,val_RMSE_h
+multiplicative,True,0.05,1.757,2.624
+multiplicative,True,0.3,2.087,3.042
+additive,False,0.05,2.099,2.481
+multiplicative,False,0.05,2.099,2.478
+additive,False,0.3,2.208,2.545
+multiplicative,False,0.3,2.222,2.551
+additive,True,0.05,2.696,3.022
+additive,True,0.3,4.517,5.279

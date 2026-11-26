@@ -1,0 +1,12 @@
+strategy,avg price paid (Rs/kWh),saving vs random (%),share of max saving captured (%),"hit rate (cheapest hours found, %)","Rs saved, 1 MW x 2 h/day (lakh)"
+Random hours (no forecast),6.87,0.0,0.0,,0.0
+Fixed rule: 2 h from 17:00 (no model),4.13,39.96,93.19,,5.11
+XGBoost (tuned),3.95,42.59,99.31,95.7,5.44
+GRU,4.0,41.81,97.5,91.94,5.34
+LSTM,4.02,41.48,96.74,90.86,5.3
+Seasonal naive (1 day),3.96,42.31,98.68,94.09,5.41
+"SARIMA(1, 1, 1)(1, 1, 1, 24)",3.97,42.29,98.62,92.47,5.41
+HW add-trend(damped) + mul-season,3.99,41.96,97.84,90.32,5.36
+Prophet,4.13,39.96,93.19,85.48,5.11
+"ARIMA(4,1,2)",6.75,1.75,4.07,24.19,0.22
+Perfect foresight (upper bound),3.92,42.88,100.0,100.0,5.48

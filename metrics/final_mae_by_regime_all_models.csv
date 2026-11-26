@@ -1,0 +1,20 @@
+,All test blocks,Solar hours (10:00-15:59),Evening peak (18:00-22:59),Blocks at the price ceiling
+XGBoost (tuned),0.518,0.377,0.837,0.753
+XGB v2,0.534,0.392,0.849,0.723
+Ensemble (XGB + XGB v2 + LGBM v2),0.54,0.388,0.908,0.722
+XGB v2 delta recency,0.547,0.401,0.905,0.701
+XGB v2 delta,0.555,0.396,0.955,0.725
+LightGBM v2 delta,0.562,0.399,0.971,0.706
+LightGBM v2 delta recency,0.569,0.4,0.99,0.711
+Seasonal naive (1 day),0.772,0.564,1.559,1.135
+LSTM,0.847,0.492,1.756,2.063
+GRU,0.858,0.458,1.815,2.15
+"Decomposition (multiplicative, 14d window)",0.87,0.527,1.792,1.771
+Seasonal naive (1 week),0.906,0.611,1.505,1.394
+"SARIMAX(1, 1, 1)(1, 1, 1, 24)",0.958,0.634,1.7,1.471
+"SARIMA(1, 1, 1)(1, 1, 1, 24)",1.007,0.698,1.707,1.457
+HW add-trend(damped) + mul-season,1.089,0.655,1.953,1.881
+AutoTS (SeasonalityMotif),1.124,0.778,1.771,1.561
+Prophet,1.825,1.26,2.126,1.404
+"ARIMA(4,1,2)",2.088,2.218,3.551,5.039
+Naive (last value),3.082,4.222,2.892,3.332

@@ -1,0 +1,6 @@
+timestamp,actual_mean,pred_mean,MAE,bias (pred-actual),weekday,actual change vs yesterday
+2025-08-15,2.593,4.418,1.888,1.826,Friday,-1.803
+2025-07-27,1.921,3.371,1.451,1.451,Sunday,-2.145
+2025-09-08,4.526,3.244,1.282,-1.282,Monday,1.977
+2025-08-24,2.547,3.793,1.264,1.246,Sunday,-2.199
+2025-08-16,3.697,2.8,1.159,-0.898,Saturday,1.105

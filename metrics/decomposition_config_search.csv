@@ -1,0 +1,5 @@
+model,window_days,val_MAE_h,val_RMSE_h
+multiplicative,14,0.92,1.357
+multiplicative,28,0.972,1.402
+additive,14,1.087,1.463
+additive,28,1.108,1.466

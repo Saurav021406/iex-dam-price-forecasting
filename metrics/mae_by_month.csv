@@ -1,0 +1,12 @@
+model,Jul,Aug,Sep
+XGBoost (tuned),0.498,0.543,0.465
+Seasonal naive (1 day),0.703,0.847,0.744
+"Decomposition (multiplicative, 14d window)",0.8,0.838,0.821
+LSTM,0.792,0.938,0.739
+GRU,0.744,0.944,0.802
+Seasonal naive (1 week),0.866,0.831,0.987
+"SARIMA(1, 1, 1)(1, 1, 1, 24)",0.897,1.07,0.922
+HW add-trend(damped) + mul-season,0.881,1.211,1.065
+Prophet,1.199,2.205,1.94
+"ARIMA(4,1,2)",1.971,2.224,1.999
+Naive (last value),3.577,3.208,2.423
